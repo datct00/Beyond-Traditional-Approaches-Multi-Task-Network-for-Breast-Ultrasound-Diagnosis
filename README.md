@@ -19,7 +19,7 @@ cd breast_us
 pip install -r requirements.txt
 ```
 
-3. Adjust hyperparameters in `hyper.py` file
+3. Adjust `ARCH`, `ENCODER_NAME` and `OUTPUT_DIR` parameter in `hyper.py` file to indicate different architectures and backbones.
 
 4. Train classification
 ```bash
