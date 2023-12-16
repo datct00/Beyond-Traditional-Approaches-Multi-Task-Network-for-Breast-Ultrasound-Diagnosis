@@ -6,6 +6,9 @@ Nothing.
 
 ## Requirements 
 - Python >=3.8
+- PyTorch >=1.9 
+- Torchvision > 0.16
+- segmentation-models-pytorch 
 
 ## Getting Started
 0. Download dataset from [Merged mask BUSI dataset](https://drive.google.com/drive/folders/11_5ikByF8hkQ7lEyxgpmlnli666vLOMA?usp=sharing) and affirm number of images in the dataset by:
@@ -43,5 +46,12 @@ python train_segmentation.py
 ```
 
 
-
-
+### Acknoweledge 
+@misc{Iakubovskii:2019,
+  Author = {Pavel Iakubovskii},
+  Title = {Segmentation Models Pytorch},
+  Year = {2019},
+  Publisher = {GitHub},
+  Journal = {GitHub repository},
+  Howpublished = {\url{https://github.com/qubvel/segmentation_models.pytorch}}
+}
