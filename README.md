@@ -46,7 +46,8 @@ python train_segmentation.py
 ```
 
 
-### Acknoweledge 
+### Acknowledgement
+```bash
 @misc{Iakubovskii:2019,
   Author = {Pavel Iakubovskii},
   Title = {Segmentation Models Pytorch},
@@ -55,3 +56,4 @@ python train_segmentation.py
   Journal = {GitHub repository},
   Howpublished = {\url{https://github.com/qubvel/segmentation_models.pytorch}}
 }
+```
