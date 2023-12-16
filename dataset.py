@@ -86,15 +86,18 @@ class BUSI(Dataset):
                 image = mask.replace('_mask.png', '.png')
                 normal.append((2, image, mask))
 
-        b_train_set, b_val_set = train_test_split(benign, test_size=0.2, random_state=42)
-        m_train_set, m_val_set = train_test_split(malignant, test_size=0.2, random_state=42)
-        n_train_set, n_val_set = train_test_split(normal, test_size=0.2, random_state=42)
+        self.b_train_set, self.b_val_set = train_test_split(benign, test_size=0.2, random_state=42)
+        self.m_train_set, self.m_val_set = train_test_split(malignant, test_size=0.2, random_state=42)
+        self.n_train_set, self.n_val_set = train_test_split(normal, test_size=0.2, random_state=42)
 
-        train_set = b_train_set + m_train_set + n_train_set
-        val_set = b_val_set + m_val_set + n_val_set
+        train_set = self.b_train_set + self.m_train_set + self.n_train_set
+        val_set = self.b_val_set + self.m_val_set + self.n_val_set
         # # without normal class
         # train_set = b_train_set + m_train_set
         # val_set = b_val_set + m_val_set
         return train_set, val_set
 
-
+if __name__ == "__main__":
+    from hyper import DATASET_DIR
+    busi = BUSI(DATASET_DIR)
+    busi.info

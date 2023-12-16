@@ -26,7 +26,7 @@ OUTPUT_ACTIVATION = None #None for logits
 ALPHA = 0.7
 
 #Path
-OUTPUT_DIR = r"W:\breast_ultrasound\multitask_model\weight"
+OUTPUT_DIR = r"W:\breast_ultrasound\single_model\weight"
 DATASET_DIR = r"W:\breast_ultrasound\datasets\Dataset_BUSI_with_GT"
 CHECKPOINT = None
 
