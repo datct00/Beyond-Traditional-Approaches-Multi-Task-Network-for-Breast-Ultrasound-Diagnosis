@@ -1,4 +1,4 @@
-# Optimizing Breast Cancer Diagnostics: A Multi-Task Segmentation and Classification Strategy
+# Beyond Traditional Approaches: Multi-Task Network for Breast Ultrasound Diagnosis
 
 ## Overview
 
